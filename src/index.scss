@@ -1,0 +1,78 @@
+@import "libs";
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#root {
+    max-width: 1200px;
+    margin: 0 auto;      
+}
+.login-form {
+    width: 480px;
+    height: 280px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    margin: 30px auto; 
+    justify-content: space-around;
+    &__input,
+    &__btn {
+        width: 80%;
+        height: 50px;
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    &__input {
+        padding-left: 30px;
+    }
+}
+.books {
+    width: 100%;   
+    &__item {
+        width: 90%;
+        min-height: 400px;
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        margin: 30px auto;
+        display: flex;
+        padding-bottom: 15px;
+        cursor: pointer;
+    }
+    &__item-cover {
+        height: 370px;
+        width: 300px;
+    }
+    &__item-cover img{
+        height: 100%;
+    }
+    &__item-content {
+        padding-left: 30px;
+    }
+    &__item-title {
+        font-size: 40px;
+    }
+    &__item-text {    
+        margin-top: 30px;
+    } 
+}
+.details__text {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.data-login {
+    text-align: center;
+}
+@import "media";

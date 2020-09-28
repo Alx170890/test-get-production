@@ -1,0 +1,30 @@
+@media screen and (max-width: 730px) {    
+    #root {
+      width: 90%; 
+    }
+    .books__item {        
+        flex-direction: column;
+        align-items: center;
+    }
+    .books__item-cover {
+        width: auto;
+        margin: 20px 0;
+    }   
+    .details__text {
+        width: 90%;        
+    } 
+}
+@media screen and (max-width: 520px) {  
+    .books__item-title {
+        font-size: 30px;
+    }   
+    .books__item-text {
+        font-size: 16px;
+    }   
+    .books__item-cover {
+        height: 270px;
+    }
+    .login-form {
+        width: 90%;        
+    }
+}
